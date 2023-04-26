@@ -7,9 +7,9 @@ import { Pages } from "@mui/icons-material";
 export default function () {
   return (
     <Routes>
-       <Route path="/" element={<div>Intro page</div>} />
+       {/* <Route path="/" element={<div>Intro page</div>} /> */}
       <Route element={<AppLayout />}>
-      <Route path='/home' element={<pages.Home/>} />
+      <Route path='/' element={<pages.Home/>} />
         {/* <Route path='/home' element={<div><span>Pagina mea de home</span></div>} /> */}
         {/* <Route path="/manage" element={<pages.myRecipes />} /> */}
         {/* <Route path="/recipes/:id" element={<pages.Recipes />} /> */}
