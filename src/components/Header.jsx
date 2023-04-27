@@ -73,7 +73,7 @@ export function Header() {
               fontFamily: 'PT Sans Narrow',
               fontWeight: 700,
               letterSpacing: '.1rem',
-              color: 'inherit',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
@@ -118,9 +118,9 @@ export function Header() {
                     key={page.name}
                     onClick={handleCloseNavMenu}
                     sx={{
+                      color: "white",
                       "&.active": {
                         "& p": {
-                          color: "text.primary",
                           fontWeight: "bold",
                         },
                         backgroundColor: "action.selected",
@@ -145,7 +145,7 @@ export function Header() {
               fontFamily: 'PT Sans Narrow',
               fontWeight: 700,
               letterSpacing: '.1rem',
-              color: 'inherit',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
@@ -165,7 +165,6 @@ export function Header() {
                     color: "white",
                     display: "block",
                     "&.active": {
-                      color: "text.primary",
                       fontWeight: "bold",
                       backgroundColor: "action.selected",
                     },
