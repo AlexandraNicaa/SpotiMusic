@@ -8,4 +8,19 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: black;
+}
+
+.appBarBg {
+    background: rgb(30,215,96);
+    background: linear-gradient(180deg, rgba(30,215,96,1) -50%, rgba(0,0,0,0.9705417323179272) 100%);
+}
+
+.avatarBg{
+    background: rgb(30,215,96);
+    background: linear-gradient(180deg, rgba(30,215,96,1) -50%, rgba(0,0,0,0.9705417323179272) 100%);
+}
+
+.albumsBg {
+    background-color: white ;
 }

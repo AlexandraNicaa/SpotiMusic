@@ -1,14 +1,10 @@
-import { Card, CardContent, CardMedia, Typography, CardActions, Button} from "@mui/material";
+import { Card, CardContent, Typography, CardActions, Button} from "@mui/material";
 import { Link } from "react-router-dom";
 
-export function RecipeCard(){
+export function AlbumCard(){
     return (
-    <Card>
-      <CardMedia
-        sx={{ height: 400 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      />
+    <Card className="albumsBg">
+      {/* card media pt poze */}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           Lizard
@@ -19,7 +15,6 @@ export function RecipeCard(){
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>

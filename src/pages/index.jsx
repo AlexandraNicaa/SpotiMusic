@@ -1,13 +1,6 @@
-import Home from "./Home";
-// import MyRecipes from "./myRecipes";
-// import Recipes from "./Recipes";
-import Login from "./Login";
-import Register from "./Register";
-
-export {
-    Home,
-    // MyRecipes,
-    // Recipes,
-    Login,
-    Register
-};
+export { default as Home } from "./Home";
+export { default as Login } from "./Login";
+export { default as Register } from "./Register";
+export { default as Albums } from "./Albums";
+export { default as Artists} from "./Artists";
+export { default as Favorites } from "./Favorites";

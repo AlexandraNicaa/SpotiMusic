@@ -9,7 +9,7 @@ const initialAuth = {
 
 export const useAuth = () => {
     // utilizatorul curent
-    const [{ user, token }, setUser] = useLocalStorage("itschool-clinic-user", initialAuth);
+    const [{ user, token }, setUser] = useLocalStorage("itschool-spotimusic-user", initialAuth);
 
     // useLayoutEffect se intampla inainte sa se afiseze interfata
     useLayoutEffect(() => {

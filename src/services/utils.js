@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://itschool-library.onrender.com'
+export const BASE_URL = 'https://api.spotify.com'
 
 export const headers = {
     "Content-Type": "application/json"

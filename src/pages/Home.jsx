@@ -1,27 +1,17 @@
-import React from 'react';
-// import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
 import { Box, Grid, Typography } from "@mui/material"
-// import { useAuthContext } from "../context/auth/AuthContext";
-import { RecipeCard } from '../components/RecipeCard';
+import { AlbumCard } from '../components/AlbumCard';
+import { getAllAlbums } from '../services/albums';
 
 export default function() {
-    // const { user, logout } = useAuthContext();
-    // const navigate = useNavigate();
-
-    // const handleLogout = () => {
-    //     logout();
-
-    //     navigate('/login');
-    // }
-
-    const recipes = [1,2,3,4,5,6,7,8];
+    const [albums, setAlbums] = useState([1,2,3,4,5,6,7,8]);
 
     return (
     <Box>
         <Grid container spacing={2}>
-            {recipes.map((recipe) => (
-            <Grid key={recipe} item xs={12} sm={6} md={3}>
-                <RecipeCard />
+            {albums.map((album) => (
+            <Grid key={album.id} item xs={12} sm={6} md={3}>
+                <AlbumCard />
             </Grid>
             ))}
         </Grid>

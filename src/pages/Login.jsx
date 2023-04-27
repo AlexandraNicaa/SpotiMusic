@@ -53,7 +53,7 @@ function onSubmit(event){
                     required
                 />
                 {serverError && <Alert severity="error">{serverError}</Alert>}
-                <Button className="loginButton" sx={{ my: 2}} type="submit" fullWidth >Sign In</Button>
+                <Button className="loginButton" sx={{ my: 2}} type="submit" variant="contained" fullWidth >Sign In</Button>
                 <Link component={NavLink} to="/register" variant="body1">Don't have an account? Sign Up</Link>
             </Box>
         </Box>
